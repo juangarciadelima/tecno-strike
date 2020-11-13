@@ -1,0 +1,29 @@
+.banner{
+    width : 100%;
+    height: 30%;
+}
+
+
+.CircleOne{
+    position: absolute;
+    width: 10%;
+}
+
+
+.CircleTwo{
+ position: absolute;
+ width: 10%;
+}
+
+
+.CircleThree{
+ position: absolute;
+ width: 10%;
+ height: 10%;
+}
+
+
+.CircleTwo h1{
+    color : white;
+    text-transform: uppercase;
+}

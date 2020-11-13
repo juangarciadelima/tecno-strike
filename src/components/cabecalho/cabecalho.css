@@ -1,0 +1,30 @@
+.img{
+    width:auto;
+    text-align:center;
+    background : url(https://img.freepik.com/free-vector/metal-texture-background_46250-146.jpg?size=626&ext=jpg)
+}
+
+
+img{
+    display: inline-block;
+    margin: 0 auto;
+    
+}
+
+button {
+   float: right; 
+   background-color : black;
+   height : 45px;
+   width: 90px;
+   color : white;
+}
+
+
+button:hover{
+    color : orange
+}
+
+
+teste:hover{
+    color: white
+}
