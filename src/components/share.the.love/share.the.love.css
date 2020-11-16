@@ -1,0 +1,47 @@
+p{
+    color : orange
+}
+
+
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    width: 25%;
+    background: #1a1c20;
+    box-shadow: inset 0 1px 1px rgba(255,255,255);
+    border: 1px solid #000;
+    margin: 0% 1% 3% 1%;
+}
+
+
+.a{
+    display: block;
+    padding: 15px 10px;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+}
+
+
+
+.a[href="https://www.facebook.com/juangarciadelima"]:hover{
+    background-color: #39599f;
+    transition: 0.4s ease;
+}
+
+.a[href="https://www.instagram.com/juangarciadelima/?hl=pt-br"]:hover{
+    background: linear-gradient(#515BD4, #8134AF,#DD2A7B,#FEDA77,#F58539 );
+    transition: 0.4s ease;
+}
+
+.a[href="https://twitter.com/KermitXYC"]:hover{
+    background-color: #3cf;
+    transition: 0.4s ease;
+}
+
+
+.a:hover {
+    color : white
+}

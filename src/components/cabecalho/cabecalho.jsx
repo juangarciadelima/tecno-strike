@@ -7,6 +7,7 @@ import { BsPencilSquare } from "react-icons/bs";
 import {BsLockFill} from "react-icons/bs"
 
 import {profile} from '../../services/user.service'
+import { logout } from '../../services/auth.service';
 
 
 
@@ -19,22 +20,16 @@ export function Cabecalho(){
      setFoto(await profile())
   },[])
 
-  return <>
-    <div className="img">
-      <img src={Logo} alt="Header Logo"/>
+  return   <div className="img">
+      <img clasname="logo"src={Logo} alt="Header Logo"/>
       { localStorage.getItem('token')
-      ? (<div>
-          <img src={foto.photo} alt="User Logo"/>
-       </div>)  : (<Link to="/cadastro">
-        <div>
-           <button type="button"> <BsPencilSquare /> Register</button>
-           </div>
+      ? (
+         <img className="imagenzinha" src={foto.photo} onClick={logout} alt="User Logo" title="If you click here, you will be logged out"/>
+       )  : (<Link to="/cadastro">
+           <button className="botaozin" type="button"> <BsPencilSquare /> Register</button>
            <Link to="/login">
-             <div>
-               <button type="button"><BsLockFill /> Sign In</button>
-               </div>
+               <button className="botaozin" type="button"><BsLockFill /> Sign In</button>
            </Link>
        </Link>)}
     </div>
-  </>
 }

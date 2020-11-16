@@ -1,14 +1,24 @@
-import {FaFacebook} from 'react-icons/fa'
-import {FaInstagram} from 'react-icons/fa'
-import {FaTwitter} from 'react-icons/fa'
+import { FaFacebook } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+import { FaTwitter } from 'react-icons/fa'
+import { Title } from '../title/title'
 import './share.the.love.css'
 
-export function ShareTheLove(){
+export function ShareTheLove() {
 
   return <div>
-      <button><a target = "_blank" rel="noreferrer" className="a"href="https://www.facebook.com/juangarciadelima"> <FaFacebook /></a></button>
-      <button><a target="_blank" rel="norreferer" className="a" href="https://www.instagram.com/juangarciadelima/?hl=pt-br"> <FaInstagram /></a></button>
-      <button><a target="_blank" rel="norreferer" className="a" href="https://twitter.com/KermitXYC"> <FaTwitter /></a></button>
+    <Title title={"Share The Love"} />
+    <ul>
+      <li>
+        <a className="a" target="_blank" href="https://www.facebook.com/juangarciadelima"><FaFacebook /></a>
+      </li>
+      <li>
+        <a className="a" target="_blank" href="https://www.instagram.com/juangarciadelima/?hl=pt-br"><FaInstagram /></a>
+      </li>
+      <li>
+        <a className="a" target="_blank" href="https://twitter.com/KermitXYC"><FaTwitter /></a>
+      </li>
+    </ul>
   </div>
 
 }

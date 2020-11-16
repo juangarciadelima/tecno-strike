@@ -1,0 +1,25 @@
+.background{
+    background-image: linear-gradient(to right, #696969, #A9A9A9);
+    font-weight: 800;
+    font-size: 14px;
+   
+}
+
+
+
+.stripes{
+    background: url(https://skywarriorthemes.com/arcane/wp-content/themes/arcane/img/stripe.png);
+    text-transform: uppercase;
+    color:#FFF;
+    padding: 13px 17px;
+    margin : 0
+}
+
+
+
+.symbol{
+    float: left;
+    margin-right: 14px;
+    color: orange;
+    margin-bottom: -10px;
+}

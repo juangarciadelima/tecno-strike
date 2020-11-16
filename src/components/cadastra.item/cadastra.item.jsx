@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { time } from '../../services/time'
 import { useEffect } from 'react'
 import { Tabela } from './tabela.times'
+import './cadastra.css'
 
 
 
@@ -36,8 +37,8 @@ export function CadastraItens() {
 
 
     return <div>
-
-        <form>
+        <form className="caixa">
+        <h1>Formulário</h1>
             <input type="text" name="description" placeholder="Descrição Do Time" onChange={onChangeSupremo} />
             <input name="name" type="text" placeholder="Qual o nome do time" onChange={onChangeSupremo} />
             <input name="members" type="number" placeholder="Quantos Membros" onChange={onChangeSupremo} />

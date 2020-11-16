@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {ModeloProximaPartida} from './modelo.partida.proxima'
 import {nextMatch} from '../../services/match.service'
+import './proxima.partida.css'
 
 export function ProximaPartida(){
   

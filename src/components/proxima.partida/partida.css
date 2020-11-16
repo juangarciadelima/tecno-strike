@@ -1,0 +1,9 @@
+.ola{
+    left: 0;
+transform: translate(-100%);
+}
+
+.olaf{
+    right: 0;
+    transform: translate(50%,-110%);
+}

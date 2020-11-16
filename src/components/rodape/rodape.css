@@ -1,15 +1,33 @@
-.a {
+.rodapezin {
+    width : 100%;
+    height: 25px;
+    padding: 0px;
+    background-color: rgb(96, 96, 96);
+    color: white;
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    bottom: 0;
+}
+
+
+.section{
+    float: left;
+    width: 33%;
     
+    font-size: 15px;
+    text-align: center;
+}
+
+
+ .a{
+     color : white
+ }
+
+
+.git{
     color : orange;
-     
-    
+    width: 40px;
+    height: 40px;
 }
-
-
-button {
-    width : 45px;
-    height : 45px;
-    background-color: black;
-}
-
 

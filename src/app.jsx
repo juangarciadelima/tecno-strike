@@ -9,10 +9,13 @@ import { Formulario } from './screens/formulario'
 import { Rodape } from './components/rodape/rodape'
 import { Video } from './components/video/video'
 import { AtualizaInteiro } from './components/atualiza.inteiro/atualiza.time.inteiro'
+import { Title } from './components/title/title'
+import { CriaPartida } from './components/cria.partida/cria.partida'
 
 
 function App() {
      return <Router>
+
           <Cabecalho />
           <Switch>
                <Route path="/telainicial">
@@ -32,6 +35,9 @@ function App() {
                </Route>
                <Route path="/atualizapartida">
                     <AtualizaPartida />
+               </Route>
+               <Route path="/criapartida">
+                    <CriaPartida />
                </Route>
           </Switch>
           <Rodape />

@@ -1,0 +1,112 @@
+.teamA{
+    float: left;
+    width: 40%;
+    padding: 10px;
+    border: 5px solid black;
+
+}
+
+
+
+
+
+.teamAtime{
+    width: 100%;
+    
+}
+
+
+
+
+
+.teamB{
+    float: right;
+    width: 40%;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+
+
+.teamBtime{
+    width: 100%;
+    
+
+}
+
+
+.Wow{
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid black;
+    background: #212129;
+    height: 50px;
+}
+
+
+.teamHomeName{
+   float: left;
+   width: 75px;
+   height: 75px;
+   left: auto;
+   margin-left: 30px;
+   color : white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.clear{
+    clear: both;
+}
+
+.versus{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    top: 12px;
+    opacity: .5;  
+    color: white;
+}
+
+
+
+
+.oppositeTeam{
+    float: right;
+    margin-right: 30px;
+    right: auto;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.hour{
+    text-align: center;
+    left: 50%;
+    right: 50%;
+}
+
+
+.hourText{
+    color : black;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+
+
+.laranja{
+    color : orange;
+    font-weight: 500;
+}
+
+
+
+
+
+

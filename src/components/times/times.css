@@ -1,18 +1,38 @@
 
 
+
+
+
+
+
+.lista{
+    width: 1200px;
+    margin: 0;
+}
+
 li{
+    background: #212528;
+    color: #888;
+    font-size: 90%;
+    border-radius: 0;
     list-style: none;
 }
 
-.imagem{
-    width: 100%;
+.timeParaListar{
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
 }
 
 
-.caritem{
-    width : 75px;
-height : 325px;
-flex-wrap: nowrap;
-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-border-radius : 4%
+.fimg{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border: 2px solid orange;
+}
+
+.bc{
+  color : orange   
 }

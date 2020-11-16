@@ -1,0 +1,21 @@
+.divone{
+display: flex;
+ flex-direction: column;
+ width: 60%;
+ height: auto;
+ float: left;
+}
+
+
+.divtwo{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    float: right;
+}
+
+
+
+
+

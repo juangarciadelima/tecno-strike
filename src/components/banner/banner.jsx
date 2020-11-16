@@ -6,16 +6,12 @@ import CircleThree from '../../logo/circlethree.png'
 
 export function Banner(){
    return <div>
-        <div>
-       <img  className="CircleOne"src={Circle} alt="Circle One"/>
-       <h1>Oi</h1>
-       <img className="CircleTwo" src={CircleTwo} alt="Circle Two"/>
-           <h1>Oi</h1>
-           <img className="CircleThree" src={CircleThree} alt="Circle Three"/>
-           <h1>Oi</h1>
-       </div>
-       <div>
-       <img className="banner"src={Foto} alt="Website Banner"/>
+       <div className="legal">
+           <img className="banner" src={Foto} alt=""/>
+           <div className="texto">
+               <h1 className="translacionatu h1">Welcome to The Battlefield, Soldier!</h1>
+               <p className="p">With arcane you will be able to <span className="spanzin">Create A Real Gaming Community</span> where users can create teams, fight matches and manage tournaments. What are you waiting for? Start today!</p>
+           </div>
        </div>
    </div>
 }

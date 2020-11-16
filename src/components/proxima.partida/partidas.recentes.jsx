@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import {ModeloPartidas} from './partidas'
-import {match} from '../../services/match.service'
+import {matchLast} from '../../services/match.service'
 
 export function Partidas(){
       const [partida,setPartida] = useState([])
 
 
       useEffect(async () => {
-          const response = await match()
+          const response = await matchLast()
           setPartida(response.content)
       },[])
 

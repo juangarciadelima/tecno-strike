@@ -30,7 +30,7 @@ async function atualizaPartida(event){
     return <div>
         <input type="number" name="scoreTeamA" placeholder="Quanto esse time fez?" onChange={onChangeSupremo}/>
         <input type="number" name="scoreTeamB" placeholder="Quanto esse time fez?"onChange={onChangeSupremo}/>
-        <select onChange={onChangeSupremo}>
+        <select name="status" onChange={onChangeSupremo}>
             <option value="CANCELLED">Cancelada</option>
             <option value="UPCOMING">Está Próxima</option>
             <option value ="PLAYING"> Em Andamento</option>

@@ -1,8 +1,14 @@
 import {apiPrivada} from '../api'
 
 
-export async function match(){
+export async function matchLast(){
     const response = await apiPrivada.get('/match/latest')
+    return response.data
+}
+
+
+export async function matches(){
+    const response = await apiPrivada.get('/match')
     return response.data
 }
 
