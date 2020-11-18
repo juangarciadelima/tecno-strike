@@ -18,18 +18,23 @@ function App() {
      return <Router>
 
           <Cabecalho />
-               <Link to="/formulario">
-               <button className="btnLink" type="button">Formulários</button>
-          </Link>
-          <Link to="/atualizapartida">
-               <button className="btnLink" type="button">Att Partidas</button>
-          </Link>
-          <Link to="/criapartida">
-               <button className="btnLink" type="button">Cr. Partidas</button>
-          </Link>
-          <Link to="/telainicial">
-               <button className="btnLink" type="button">Início</button>
-          </Link>
+          <div className="dropdown">
+               <button className="dropdownBtn" >Nav Bar</button>
+               <div className="dropdownContent">
+               <Link to="/telainicial">
+                         <button className="btnLink" type="button">Início</button>
+                    </Link>
+                    <Link to="/formulario">
+                         <button className="btnLink" type="button">Formulários</button>
+                    </Link>
+                    <Link to="/criapartida">
+                         <button className="btnLink" type="button">Cr. Partidas</button>
+                    </Link>
+                    <Link to="/atualizapartida">
+                         <button className="btnLink" type="button">Att Partidas</button>
+                    </Link>
+               </div>
+          </div>
           <Switch>
                <Route path="/telainicial">
                     <TelaInicial />

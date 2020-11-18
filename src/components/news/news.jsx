@@ -1,5 +1,6 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
+import './news.css'
 
 
 export function News() {
@@ -29,12 +30,10 @@ export function News() {
     ]
 
 
-    return <div>
+    return <div className="news">
         {noticias.map((noticia) => (
-                <div>
-                    <img src={noticia.newsPhoto} alt="News Avatar" />
-                    <p>{noticia.newsTitle}</p>
-                    <span>{noticia.newsDescription}</span>
+                <div className="newsItem">
+                    <p  className="newsText">{noticia.newsTitle}</p>
                 </div>
         ))}
     </div>

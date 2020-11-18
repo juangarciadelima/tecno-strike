@@ -3,3 +3,8 @@
     height: 530px;
     background-image: url('./video.mp4');
 }
+
+.btnVideo{
+    display: flex;
+    justify-content: space-evenly;
+}
