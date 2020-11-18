@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useHistory, useParams } from "react-router-dom"
 import { attMatch } from "../../services/match.service"
+import './atualiza.partida.css'
 
 export function AtualizaPartida(){
     
@@ -27,10 +28,10 @@ async function atualizaPartida(event){
 }
 
 
-    return <div>
+    return <div className="box">
         <input type="number" name="scoreTeamA" placeholder="Quanto esse time fez?" onChange={onChangeSupremo}/>
         <input type="number" name="scoreTeamB" placeholder="Quanto esse time fez?"onChange={onChangeSupremo}/>
-        <select name="status" onChange={onChangeSupremo}>
+        <select className="select" name="status" onChange={onChangeSupremo}>
             <option value="CANCELLED">Cancelada</option>
             <option value="UPCOMING">Está Próxima</option>
             <option value ="PLAYING"> Em Andamento</option>

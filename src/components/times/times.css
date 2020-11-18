@@ -6,33 +6,34 @@
 
 
 .lista{
-    width: 1200px;
-    margin: 0;
+    width: 100%;
 }
 
-li{
+.li{
     background: #212528;
     color: #888;
     font-size: 90%;
+    width: 90%;
     border-radius: 0;
     list-style: none;
+    margin-left : -10px;
+    box-shadow: inset 0 1px 1px rgba(255,255,255) ;
 }
 
 .timeParaListar{
-    background: none;
-    border: none;
-    box-shadow: none;
     margin-bottom: 0;
 }
 
 
-.fimg{
+.imgTeam{
     float: left;
     width: 40px;
     height: 40px;
     border: 2px solid orange;
 }
 
-.bc{
-  color : orange   
+
+.orange{
+    color : orange
 }
+

@@ -56,14 +56,23 @@
 
 
 
-.botaozin:hover{
-    background-color: orange;
+.botaozin:hover, .botaozin:focus{
+    box-shadow: inset 7.2em 0 0 0  orange;
     color: white;
+
 }
 
 
-.botaozinbutton{
-    transition: 0.3s ease;
+.botaozin{
+    transition: 0.7s ease;
+    float: right;
+    color: white;
+    outline: none;
+    background: none;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
 }
 
 

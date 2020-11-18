@@ -9,7 +9,7 @@ export function Tabela({ time }) {
         await deletaTime(time.id)
     }
     return <div>
-
+       
         <table>
             <tr>
                 <th>Foto</th>
@@ -20,7 +20,7 @@ export function Tabela({ time }) {
             <tr>
                 <td><img src={time.photo} alt="Team Avatar" /></td>
                 <td>{time.name}</td>
-                <td>{time.members} membro</td>
+                <td>{time.members} membros</td>
                 <td> <Link to={`/editartime/${time.id}`}>
                     <button className="button" type="button">Editar</button>
                 </Link> <button className="button"type="button" onClick={excluirTime}>Excluir</button></td>

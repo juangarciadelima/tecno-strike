@@ -1,15 +1,17 @@
-.caixa{
+.box{
     width: 300px;
     padding: 40px;
     position: relative;
     background: black;
    text-align: center;
    margin-top: 50px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -10%);
 }
 
 
-
-.caixa input[type="text"], .caixa input[type="number"]{
+.box input{
     border: 0;
     background: none;
     display: flex;
@@ -26,27 +28,11 @@
 }
 
 
-
-.caixa h1{
-    color: orange;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-
-
-.caixa input[type="text"]:focus, .caixa input[type="number"]:focus{
-    width: 240px;
-    transition: 0.3s ease;
-    border-color: orange;
-}
-
-
-.caixa button[type="button"]{
+.box button{
     border: 0;
     background: none;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 20px auto;
     text-align: center;
     border: 2px solid white;
@@ -55,11 +41,15 @@
     border-radius: 24px;
     transition: 0.25s;
     color: white;
-    cursor: pointer;
-    
 }
 
 
-.caixa button[type="button"]:hover{
+.box input:focus{
+    border-color: orange;
+    width: 240px;
+}
+
+
+.box button:hover{
     border-color: orange;
 }

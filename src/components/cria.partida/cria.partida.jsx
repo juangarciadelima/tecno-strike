@@ -9,12 +9,18 @@ import './cria.partida.css'
 
 export function CriaPartida(){
 
+
+    
+
     const [times,setTimes] = useState([])
     const [partida,setPartida] = useState({})
 
     useEffect(async () => {
         const resposta = await time()
         setTimes(resposta.content)
+        if(resposta.status === "400"){
+           alert('Verifique seus times')
+        }
 
     }, [])
 
@@ -41,6 +47,9 @@ export function CriaPartida(){
         <input className="data" type="datetime-local" name="datetime" placeholder="Horário" onChange={onChangeSupremo}/>
         <button type="button" onClick={Register}>Cadastre Aqui</button>
         </form>
+
+
+        
         <div>
         {times.map((time) => (
             <Modelo time={time}/>

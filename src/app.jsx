@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import React from 'react'
 import { Cabecalho } from './components/cabecalho/cabecalho'
 import { Cadastro } from './screens/cadastro'
@@ -11,12 +11,25 @@ import { Video } from './components/video/video'
 import { AtualizaInteiro } from './components/atualiza.inteiro/atualiza.time.inteiro'
 import { Title } from './components/title/title'
 import { CriaPartida } from './components/cria.partida/cria.partida'
+import './video/app.css'
 
 
 function App() {
      return <Router>
 
           <Cabecalho />
+               <Link to="/formulario">
+               <button className="btnLink" type="button">Formulários</button>
+          </Link>
+          <Link to="/atualizapartida">
+               <button className="btnLink" type="button">Att Partidas</button>
+          </Link>
+          <Link to="/criapartida">
+               <button className="btnLink" type="button">Cr. Partidas</button>
+          </Link>
+          <Link to="/telainicial">
+               <button className="btnLink" type="button">Início</button>
+          </Link>
           <Switch>
                <Route path="/telainicial">
                     <TelaInicial />

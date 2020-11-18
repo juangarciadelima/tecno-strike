@@ -45,9 +45,11 @@ export function CadastraItens() {
             <input name="photo" type="text" placeholder="Foto do Time" onChange={onChangeSupremo} />
             <button type="button" onClick={itemCadastrado}>Cadastre Seu Time</button>
         </form>
-
+        <div>
         {times.map((time) => (
             <Tabela time={time} />
         ))}
+        </div>
+        
     </div>
 }

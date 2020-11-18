@@ -1,9 +1,48 @@
-.ola{
-    left: 0;
-transform: translate(-100%);
+.divisao{
+    display: flex;
+    flex-direction: column;
 }
 
-.olaf{
-    right: 0;
-    transform: translate(50%,-110%);
+
+.teams{
+    width: 95%;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    background:#212528;
+    box-shadow: inset 0 1px 1px rgba(255,255,255) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imgA{
+    height: 50px;
+}
+
+
+.imgB{
+    height: 50px;
+}
+
+
+.versusTwo{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    opacity: .5;
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+
+.hourTwo{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+.orange{
+    color: orange;
+    font-weight: 500;
 }

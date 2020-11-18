@@ -1,9 +1,11 @@
 .divone{
 display: flex;
  flex-direction: column;
- width: 60%;
+ justify-content: flex-start;
+ width: 50%;
  height: auto;
  float: left;
+ margin-left : 20px
 }
 
 
@@ -12,7 +14,9 @@ display: flex;
     flex-direction: column;
     width: 40%;
     height: auto;
-    float: right;
+    justify-content: flex-end;
+    margin-right: 25px;
+    padding-left: 50px;
 }
 
 

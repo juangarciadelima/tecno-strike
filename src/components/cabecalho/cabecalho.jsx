@@ -1,6 +1,6 @@
 
 import React, {useState, useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import Logo from '../../logo/logo.png'
 import './cabecalho.css'
 import { BsPencilSquare } from "react-icons/bs";
@@ -14,6 +14,7 @@ import { logout } from '../../services/auth.service';
 export function Cabecalho(){
   
   const [foto,setFoto] = useState({})
+  const history = useHistory()
 
 
   useEffect(async () => {

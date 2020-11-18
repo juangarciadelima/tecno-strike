@@ -1,4 +1,4 @@
-
+import './cadastro.css'
 import {register} from '../services/user.service'
 import React, {useState} from 'react'
 
@@ -17,8 +17,8 @@ function onChangeSupremo(event){
     setPessoa(copia)
 }
 
-    return <form>
-        <input type="text" name="name" placeholder="name"onChange={onChangeSupremo}/>
+    return <form className="box">
+        <input type="text" name="name" placeholder="Name"onChange={onChangeSupremo}/>
         <input type="email" name="email"placeholder="Email"onChange={onChangeSupremo}/>
         <input type="password" name="password"placeholder="Senha"onChange={onChangeSupremo}/>
         <input type="text" name="description" placeholder="Bio"onChange={onChangeSupremo}/>

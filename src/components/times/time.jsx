@@ -16,13 +16,13 @@ export function Time({time}){
 
 return <div>
     <ul className="lista">
-        <li>
+        <li className="li">
             <div className="timeParaListar">
                 <div className="timeFoto"> 
-                 <img className="fimg" src={time.photo} alt=""/>
+                 <img className="imgTeam" src={time.photo} alt=""/>
                 </div>
                 <div className="timeNome">
-<span className="bc">{time.name}</span>
+<span className="orange">{time.name}</span>
                 </div>
                 <div className="timeMembros">
                     <span>{time.members} membros</span>

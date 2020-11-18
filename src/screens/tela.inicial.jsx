@@ -14,7 +14,7 @@ import './tela.inicial.css'
 export function TelaInicial(){
   
     return <div>
-        {localStorage.getItem('token') ? (<div> <Banner /> <News />  <Video />    <div className="divone"><Partidas /></div>   <div className="divtwo"><ShareTheLove />   <Title title="Teams"/> <div className="clear"></div><Times /> </div> </div>  ) : (<h1>Loga Aí</h1>) }
+        {localStorage.getItem('token') ? (<div> <Banner /> <News />  <Video />    <div className="divone"><ProximaPartida/> <Title title={"Recent Matches"} /><Partidas/></div>   <div className="divtwo"><ShareTheLove />   <Title title="Teams"/> <div className="clear"></div><Times /> </div> </div>  ) : (<h1>Loga Aí</h1>) }
     </div>
 
      
