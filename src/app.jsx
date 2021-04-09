@@ -65,3 +65,6 @@ function App() {
 
 export default App
 
+
+//Definição das Rotas e renderização dos componentes
+
