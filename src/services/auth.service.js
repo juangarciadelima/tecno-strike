@@ -12,3 +12,9 @@ export async function login(request){
 export function logout(){
     localStorage.removeItem('token') 
 }
+
+
+
+//Função de logar e deslogar
+
+//Requisção post que guarda um token usado como autenticador de login
